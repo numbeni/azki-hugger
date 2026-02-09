@@ -14,7 +14,129 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      accident_records: {
+        Row: {
+          accident_date: string
+          accident_type: string
+          created_at: string
+          description: string | null
+          id: string
+          national_id: string
+        }
+        Insert: {
+          accident_date: string
+          accident_type?: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          national_id: string
+        }
+        Update: {
+          accident_date?: string
+          accident_type?: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          national_id?: string
+        }
+        Relationships: []
+      }
+      income_deciles: {
+        Row: {
+          decile: number
+          id: string
+          national_id: string
+          updated_at: string
+        }
+        Insert: {
+          decile: number
+          id?: string
+          national_id: string
+          updated_at?: string
+        }
+        Update: {
+          decile?: number
+          id?: string
+          national_id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      insurance_recommendations: {
+        Row: {
+          base_price: number
+          company: string
+          coverage_limit: number
+          created_at: string
+          id: string
+          is_high_coverage: boolean
+          is_private: boolean
+          name: string
+          type: string
+        }
+        Insert: {
+          base_price: number
+          company: string
+          coverage_limit: number
+          created_at?: string
+          id?: string
+          is_high_coverage?: boolean
+          is_private?: boolean
+          name: string
+          type: string
+        }
+        Update: {
+          base_price?: number
+          company?: string
+          coverage_limit?: number
+          created_at?: string
+          id?: string
+          is_high_coverage?: boolean
+          is_private?: boolean
+          name?: string
+          type?: string
+        }
+        Relationships: []
+      }
+      smart_scores: {
+        Row: {
+          accident_count: number
+          created_at: string
+          discount_percent: number
+          full_name: string
+          id: string
+          income_decile: number
+          national_id: string
+          phone: string
+          recommendation_type: string
+          smart_score: number
+        }
+        Insert: {
+          accident_count?: number
+          created_at?: string
+          discount_percent?: number
+          full_name: string
+          id?: string
+          income_decile?: number
+          national_id: string
+          phone: string
+          recommendation_type?: string
+          smart_score?: number
+        }
+        Update: {
+          accident_count?: number
+          created_at?: string
+          discount_percent?: number
+          full_name?: string
+          id?: string
+          income_decile?: number
+          national_id?: string
+          phone?: string
+          recommendation_type?: string
+          smart_score?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
