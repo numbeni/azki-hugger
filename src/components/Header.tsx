@@ -1,5 +1,7 @@
-import { Phone, ChevronDown, User } from "lucide-react";
+import { Phone, ChevronDown, User, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import SmartScoreModal from "./SmartScoreModal";
 
 const Header = () => {
   const navItems = [
@@ -35,6 +37,24 @@ const Header = () => {
                 {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
               </button>
             ))}
+            
+            {/* Smart Score - در کنار اقساط و اعتبار */}
+            <div className="flex items-center gap-1">
+              <SmartScoreModal 
+                trigger={
+                  <button className="flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors">
+                    <Brain className="w-4 h-4" />
+                    امتیاز هوشمند
+                  </button>
+                }
+              />
+              <Link 
+                to="/smart-score" 
+                className="text-xs text-muted-foreground hover:text-primary transition-colors"
+              >
+                (صفحه کامل)
+              </Link>
+            </div>
           </nav>
 
           {/* Actions */}
