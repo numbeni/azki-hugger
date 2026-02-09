@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
           
           <p className="text-background/50 text-sm">
-            © ۱۴۰۴ ازکی - تمامی حقوق محفوظ است
+            © پروژه آموزشی درس فناوری و اطلاعات دانشگاه امیرکبیر - بهنیا معصومی - تمامی حقوق محفوظ است
           </p>
 
           {/* Trust Badges Placeholder */}
