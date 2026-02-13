@@ -2,8 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
-
+**URL**: https://azki-hugger--behniamasoumi.replit.app
 ## How can I edit this code?
 
 There are several ways of editing your application.
@@ -55,7 +54,6 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## how to preview this website quicky
-by lovable : https://azki-hugger.lovable.app
-by replit : https://8e45cc7b-8f6c-4bf4-ba4c-9bf719c0d9ad-00-1pn2d4gnz82v7.picard.replit.dev/
+## how to edit this website quickly by lovable
+- https://azki-hugger.lovable.app
 
